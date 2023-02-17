@@ -160,7 +160,7 @@ const Navbar = ({setlangage,langage,content}) => {
             </li>
               
             </ul>
-            <div className='pt-40'>
+            <div className='pt-2'>
               <p className='uppercase tracking-widest text-[#5651e5]'>
                 {content.connect_2}
               </p>
