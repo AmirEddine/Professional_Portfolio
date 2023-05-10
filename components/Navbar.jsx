@@ -5,16 +5,17 @@ import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from 'react-icons/ai';
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
 import { BsFillPersonLinesFill } from 'react-icons/bs';
 import NavLogo from '../public/assets/navLogo.png'
+import { FormattedMessage } from 'react-intl';
+import Example from './Example';
 
-const Navbar = ({setlangage,langage,content}) => {
+const Navbar = () => {
   const [nav, setNav] = useState(false);
   const [shadow, setShadow] = useState(false);
   const [navBg, setNavBg] = useState('#ecf0f3');
   const [linkColor, setLinkColor] = useState('#1f2937');
   
   
- 
- 
+
   const handleNav = () => {
     setNav(!nav);
   };
@@ -51,28 +52,31 @@ const Navbar = ({setlangage,langage,content}) => {
             />
           </a>
         </Link>
+       {/* <div>
+          <ThemeToggler/>
+    </div>*/}
         <div>
-          <ul style={{ color: `${linkColor}` }} className='hidden md:flex'>
+          <ul style={{ color: `${linkColor}` }} className='hidden items-center md:flex '>
             <li className='ml-10 text-sm uppercase hover:border-b'>
-             <Link href='/#'><a >{content.Nav_item_1}</a></Link> 
+             <Link href='/#'><a ><FormattedMessage id='app.NavBar.Nav_item_1'></FormattedMessage></a></Link> 
             </li>
             <li className='ml-10 text-sm uppercase hover:border-b'>
-            <Link href='/#about'><a >{content.Nav_item_2}</a></Link> 
+            <Link href='/#about'><a ><FormattedMessage id='app.NavBar.Nav_item_2'></FormattedMessage></a></Link> 
             </li>
             <li className='ml-10 text-sm uppercase hover:border-b'>
-            <Link href='/#skills'><a>{content.Nav_item_3}</a></Link>  
+            <Link href='/#skills'><a><FormattedMessage id='app.NavBar.Nav_item_3'></FormattedMessage></a></Link>  
             </li>
             <li className='ml-10 text-sm uppercase hover:border-b'>
-            <Link href='/#projects'><a >{content.Nav_item_4}</a></Link>  
+            <Link href='/#projects'><a ><FormattedMessage id='app.NavBar.Nav_item_4'></FormattedMessage></a></Link>  
             </li>
             <li className='ml-10 text-sm uppercase hover:border-b'>
-              <Link href='/resume' legacyBehavior><a >{content.Nav_item_5}</a></Link>
+              <Link href='/resume' legacyBehavior><a ><FormattedMessage id='app.NavBar.Nav_item_5'></FormattedMessage></a></Link>
             </li>
             <li className='ml-10 text-sm uppercase hover:border-b'>
             <Link href='/#contact'><a >Contact</a></Link>
             </li>
             <li className='ml-10 text-sm uppercase hover:border-b'>
-              <div  onClick={() => setlangage(!langage)}>{langage ? 'FR' :'EN'}</div>
+              <div className='flex flex-row '><Example></Example></div>
             </li>
           </ul>
           {/* Hamburger Icon */}
@@ -127,27 +131,27 @@ const Navbar = ({setlangage,langage,content}) => {
             <ul className='uppercase'>
               <Link href='/'>
                 <li onClick={() => setNav(false)} className='py-4 text-sm'>
-                {content.Nav_item_1}
+                <FormattedMessage id='app.NavBar.Nav_item_1'></FormattedMessage>
                 </li>
               </Link>
               <Link href='/#about'>
                 <li onClick={() => setNav(false)} className='py-4 text-sm'>
-                {content.Nav_item_2}
+                <FormattedMessage id='app.NavBar.Nav_item_2'></FormattedMessage>
                 </li>
               </Link>
               <Link href='/#skills'>
                 <li onClick={() => setNav(false)} className='py-4 text-sm'>
-                {content.Nav_item_3}
+                <FormattedMessage id='app.NavBar.Nav_item_3'></FormattedMessage>
                 </li>
               </Link>
               <Link href='/#projects'>
                 <li onClick={() => setNav(false)} className='py-4 text-sm'>
-                {content.Nav_item_4}
+                <FormattedMessage id='app.NavBar.Nav_item_4'></FormattedMessage>
                 </li>
               </Link>
               <Link href='/resume'>
                 <li onClick={() => setNav(false)} className='py-4 text-sm'>
-                {content.Nav_item_5}
+                <FormattedMessage id='app.NavBar.Nav_item_5'></FormattedMessage>
                 </li>
               </Link>
               <Link href='/#contact'>
@@ -156,13 +160,13 @@ const Navbar = ({setlangage,langage,content}) => {
                 </li>
               </Link>
               <li className='py-4 text-sm'>
-              <div  onClick={() => setlangage(!langage)}>{langage ? 'FR' :'EN'}</div>
+              <div ><Example></Example></div>
             </li>
               
             </ul>
             <div className='pt-2'>
               <p className='uppercase tracking-widest text-[#5651e5]'>
-                {content.connect_2}
+               <FormattedMessage id='app.title.connect_2'></FormattedMessage>
               </p>
               <div className='flex items-center justify-between my-4 w-full sm:w-[80%]'>
                 <a

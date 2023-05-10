@@ -1,11 +1,11 @@
 import Image from 'next/image';
 import React from 'react';
-import Ecommerce_pic from '../public/assets/projects/Ecommerce.png';
+import WeatherApp_pic from '../public/assets/projects/WeatherApp.png';
 import { RiRadioButtonFill } from 'react-icons/ri';
 import Link from 'next/link';
 import { FormattedMessage } from 'react-intl';
 
-const Ecommerce = () => {
+const WeatherApp = () => {
   return (
     <div className='w-full'>
       <div className='w-screen h-[50vh] relative'>
@@ -14,12 +14,12 @@ const Ecommerce = () => {
           className='absolute z-1'
           layout='fill'
           objectFit='cover'
-          src={Ecommerce_pic}
+          src={WeatherApp_pic}
           alt='/'
         />
         <div className='absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2'>
           <h2 className='py-2'>E commerce App</h2>
-          <h3>React</h3>
+          <h3>React JS / Tailwind </h3>
         </div>
       </div>
 
@@ -28,17 +28,17 @@ const Ecommerce = () => {
           <p>Project</p>
           <h2>Overview</h2>
           <p>
-            <FormattedMessage id='app.Ecommerce.overview'/>
+          <FormattedMessage id='app.Weather.overview'/>
           </p>
           <a
-            href='https://github.com/AmirEddine/ecommerce-technoShop'
+            href='https://github.com/AmirEddine/weather-app-react'
             target='_blank'
             rel='noreferrer'
           >
             <button className='px-8 py-2 mt-4 mr-8'>Code</button>
           </a>
           <a
-            href='https://ecommerce-technoshop.netlify.app/'
+            href='https://my-simple-weather-app-react.netlify.app/'
             target='_blank'
             rel='noreferrer'
           >
@@ -54,7 +54,7 @@ const Ecommerce = () => {
                 <RiRadioButtonFill className='pr-1' /> React
               </p>
               <p className='text-gray-600 py-2 flex items-center'>
-                <RiRadioButtonFill className='pr-1' /> CSS
+                <RiRadioButtonFill className='pr-1' /> Tailwind
               </p>
               <p className='text-gray-600 py-2 flex items-center'>
                 <RiRadioButtonFill className='pr-1' /> Javascript
@@ -70,4 +70,4 @@ const Ecommerce = () => {
   );
 };
 
-export default Ecommerce;
+export default WeatherApp;

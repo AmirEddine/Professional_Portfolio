@@ -1,11 +1,11 @@
 import Image from 'next/image';
 import React from 'react';
-import Ecommerce_pic from '../public/assets/projects/Ecommerce.png';
+import DungeonExplorerimg from '../public/assets/projects/DungeonExplorer.png';
 import { RiRadioButtonFill } from 'react-icons/ri';
 import Link from 'next/link';
 import { FormattedMessage } from 'react-intl';
 
-const Ecommerce = () => {
+const DungeonExplorer = () => {
   return (
     <div className='w-full'>
       <div className='w-screen h-[50vh] relative'>
@@ -14,12 +14,12 @@ const Ecommerce = () => {
           className='absolute z-1'
           layout='fill'
           objectFit='cover'
-          src={Ecommerce_pic}
+          src={DungeonExplorerimg}
           alt='/'
         />
         <div className='absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2'>
-          <h2 className='py-2'>E commerce App</h2>
-          <h3>React</h3>
+          <h2 className='py-2'>Dungeon Explorer</h2>
+          <h3><FormattedMessage id='app.DungeonExplorer.title' /> </h3>
         </div>
       </div>
 
@@ -28,30 +28,29 @@ const Ecommerce = () => {
           <p>Project</p>
           <h2>Overview</h2>
           <p>
-            <FormattedMessage id='app.Ecommerce.overview'/>
+           <FormattedMessage id='app.DungeonExplorer.Overview'/>
           </p>
           <a
-            href='https://github.com/AmirEddine/ecommerce-technoShop'
+            href='https://github.com/AmirEddine/Dungeon-Explorer'
             target='_blank'
             rel='noreferrer'
           >
             <button className='px-8 py-2 mt-4 mr-8'>Code</button>
           </a>
           <a
-            href='https://ecommerce-technoshop.netlify.app/'
+            href='https://capable-figolla-1fc92e.netlify.app/'
             target='_blank'
             rel='noreferrer'
           >
             <button className='px-8 py-2 mt-4'>Demo</button>
           </a>
-
         </div>
         <div className='col-span-4 md:col-span-1 shadow-xl shadow-gray-400 rounded-xl py-4'>
           <div className='p-2'>
             <p className='text-center font-bold pb-2'>Technologies</p>
-            <div className='grid grid-cols-3 md:grid-cols-1 '>
+            <div className='grid grid-cols-3 md:grid-cols-1'>
               <p className='text-gray-600 py-2 flex items-center'>
-                <RiRadioButtonFill className='pr-1' /> React
+                <RiRadioButtonFill className='pr-1' /> HTML
               </p>
               <p className='text-gray-600 py-2 flex items-center'>
                 <RiRadioButtonFill className='pr-1' /> CSS
@@ -70,4 +69,4 @@ const Ecommerce = () => {
   );
 };
 
-export default Ecommerce;
+export default DungeonExplorer;

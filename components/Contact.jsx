@@ -6,15 +6,16 @@ import { BsFillPersonLinesFill } from 'react-icons/bs';
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
 import { HiOutlineChevronDoubleUp } from 'react-icons/hi';
 import ContactImg from '../public/assets/projects/contact.jpg';
+import { FormattedMessage } from 'react-intl';
 
-const Contact = ({ content }) => {
+const Contact = () => {
   return (
     <div id='contact' className='w-full items-center py-16 lg:h-screen'>
       <div className='max-w-[1240px] m-auto px-2 py-16 w-full '>
         <p className='text-xl tracking-widest uppercase text-[#5651e5]'>
           Contact
         </p>
-        <h2 className='py-4'>{content.connect}</h2>
+        <h2 className='py-4'><FormattedMessage id='app.title.connect'/></h2>
         <div className='grid lg:grid-cols-5 gap-8'>
           {/* left */}
           <div className='col-span-3 lg:col-span-2 w-full h-full shadow-xl shadow-gray-400 rounded-xl p-4'>
@@ -28,13 +29,13 @@ const Contact = ({ content }) => {
               </div>
               <div>
                 <h2 className='py-2'>Amir Benmachou</h2>
-                <p>{content.front_end}</p>
+                <p><FormattedMessage id='app.Main.speciality'/></p>
                 <p className='py-4'>
-                  {content.available}
+                  <FormattedMessage id='app.Contact.available'/>
                 </p>
               </div>
               <div>
-                <p className='uppercase pt-8'>{content.connect_2}</p>
+                <p className='uppercase pt-8'><FormattedMessage id='app.title.connect_2'/></p>
                 <div className='flex items-center justify-between py-4'>
                   <a
                     href='https://www.linkedin.com/in/amir-eddine-benmachou-a16573231/'
