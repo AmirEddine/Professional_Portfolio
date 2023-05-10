@@ -11,7 +11,7 @@ const messages = {
 const LocaleContext = createContext()
 
 export function LocaleProvider({children}) {
-    const [locale, setLocale] = useState('fr');
+    const [locale, setLocale] = useState('en');
 
     useEffect(() => {
         let navigatorLanguage = navigator.language.split('-')[0];
