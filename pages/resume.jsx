@@ -73,7 +73,7 @@ const resume = () => {
             <h6 className='underline text-[16px] py-1' ><FormattedMessage id='app.Resume.Skills.title3'/></h6> 
             <ul className='list-disc list-outside px-7 py-1 leading-relaxed cursor-default'>
             <li className='cursor-text'><FormattedMessage id='app.Resume.Skills.desktop.li1'/></li>
-            <li className='cursor-text'><FormattedMessage id='app.Resume.Skills.desktop.li1'/></li>
+            <li className='cursor-text'><FormattedMessage id='app.Resume.Skills.desktop.li2'/></li>
             </ul>
             
         </div>
