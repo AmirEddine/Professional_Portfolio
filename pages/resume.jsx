@@ -66,14 +66,14 @@ const resume = () => {
             <br />
             <h6 className='underline text-[16px] py-1' ><FormattedMessage id='app.Resume.Skills.title2'/></h6> 
             <ul className='list-disc list-outside px-7 py-1 leading-relaxed cursor-default'>
-              <li>More than 1 year experience: Java and Android Studio.</li>
-              <li>Less than 1 year experience: IOS app development using Swift.</li>
+            <li className='cursor-text'><FormattedMessage id='app.Resume.Skills.mobile.li1'/></li>
+            <li className='cursor-text'><FormattedMessage id='app.Resume.Skills.mobile.li2'/></li>
             </ul>
             <br />
             <h6 className='underline text-[16px] py-1' ><FormattedMessage id='app.Resume.Skills.title3'/></h6> 
             <ul className='list-disc list-outside px-7 py-1 leading-relaxed cursor-default'>
-              <li>More than 1 year experience: C#, Visual studio and Visual Basic.</li>
-              <li>Less than 1 year experience: NetBeans using Java.</li>
+            <li className='cursor-text'><FormattedMessage id='app.Resume.Skills.desktop.li1'/></li>
+            <li className='cursor-text'><FormattedMessage id='app.Resume.Skills.desktop.li1'/></li>
             </ul>
             
         </div>
