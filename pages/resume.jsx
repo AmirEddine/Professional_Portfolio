@@ -78,8 +78,113 @@ const resume = () => {
             
         </div>
 
+        <h5 className='text-center underline text-[18px] py-4'>
+    <FormattedMessage id='app.Resume.ProExperience' />
+  </h5>
+
+  <div className='py-6'>
+    <p>
+      <span className='font-bold'><FormattedMessage id='app.Resume.ProExperience.jobTitle_3' /></span>
+      <span className='px-2'>|</span>Groupe des Sociétés HASNAOUI
+    </p>
+    <p className='py-1 italic'><FormattedMessage id='app.Resume.ProExperience.city&date_4' /></p>
+    <ul className='list-disc list-outside px-7 py-1 leading-relaxed cursor-default'>
+      <li className='cursor-text'>
+        <FormattedMessage id='app.Resume.ProExperience.job_3.li_1' />
+      </li>
+      <li className='cursor-text'>
+        <FormattedMessage id='app.Resume.ProExperience.job_3.li_2' />
+      </li>
+      <li className='cursor-text'>
+        <FormattedMessage id='app.Resume.ProExperience.job_3.li_3' />
+      </li>
+      <li className='cursor-text'>
+        <FormattedMessage id='app.Resume.ProExperience.job_3.li_4' />
+      </li>
+    </ul>
+  </div>
+
+  <div className='py-6'>
+    <p>
+      <span className='font-bold'><FormattedMessage id='app.Resume.ProExperience.jobTitle_2' /></span>
+      <span className='px-2'>|</span>Brenco Engineering & Consulting
+    </p>
+    <p className='py-1 italic'><FormattedMessage id='app.Resume.ProExperience.city&date_3' /></p>
+    <ul className='list-disc list-outside px-7 py-1 leading-relaxed cursor-default'>
+      <li className='cursor-text'>
+        <FormattedMessage id='app.Resume.ProExperience.job_2.li_1' />
+      </li>
+      <li className='cursor-text'>
+        <FormattedMessage id='app.Resume.ProExperience.job_2.li_2' />
+      </li>
+      <li className='cursor-text'>
+        <FormattedMessage id='app.Resume.ProExperience.job_2.li_3' />
+      </li>
+    </ul>
+  </div>
+       
+
+<div className='py-6'>
+  <p>
+    <span className='font-bold'><FormattedMessage id='app.Resume.ProExperience.jobTitle_1' /></span>
+    <span className='px-2'>|</span>Bell Canada
+  </p>
+  <p className='py-1 italic'><FormattedMessage id='app.Resume.ProExperience.city&date_2' /></p>
+  <ul className='list-disc list-outside px-7 py-1 leading-relaxed cursor-default'>
+    <li className='cursor-text'>
+      <FormattedMessage id='app.Resume.ProExperience.job_1.li_1' />
+    </li>
+    <li className='cursor-text'>
+      <FormattedMessage id='app.Resume.ProExperience.job_1.li_2' />
+    </li>
+    {/* Add more list items for other job responsibilities if needed */}
+    <li className='cursor-text'>
+      <FormattedMessage id='app.Resume.ProExperience.job_1.li_3' />
+    </li>
+    <li className='cursor-text'>
+      <FormattedMessage id='app.Resume.ProExperience.job_1.li_4' />
+    </li>
+    <li className='cursor-text'>
+      <FormattedMessage id='app.Resume.ProExperience.job_1.li_5' />
+    </li>
+    <li className='cursor-text'>
+      <FormattedMessage id='app.Resume.ProExperience.job_1.li_6' />
+    </li>
+    <li className='cursor-text'>
+      <FormattedMessage id='app.Resume.ProExperience.job_1.li_7' />
+    </li>
+    <li className='cursor-text'>
+      <FormattedMessage id='app.Resume.ProExperience.job_1.li_8' />
+    </li>
+    <li className='cursor-text'>
+      <FormattedMessage id='app.Resume.ProExperience.job_1.li_9' />
+    </li>
+    <li className='cursor-text'>
+      <FormattedMessage id='app.Resume.ProExperience.job_1.li_10' />
+    </li>
+    <li className='cursor-text'>
+      <FormattedMessage id='app.Resume.ProExperience.job_1.li_11' />
+    </li>
+    <li className='cursor-text'>
+      <FormattedMessage id='app.Resume.ProExperience.job_1.li_12' />
+    </li>
+    <li className='cursor-text'>
+      <FormattedMessage id='app.Resume.ProExperience.job_1.li_13' />
+    </li>
+    <li className='cursor-text'>
+      <FormattedMessage id='app.Resume.ProExperience.job_1.li_14' />
+    </li>
+    {/* Add more list items for other job responsibilities if needed */}
+  </ul>
+</div>
+
+        <div>
+
+        </div>
 
         {/* Personal Experience */}
+
+       
 
 
         {/*  */}
@@ -126,6 +231,31 @@ const resume = () => {
           <p className='py-1 '><FormattedMessage id='app.Resume.OtherExperience.job_1.References'/></p>
         </div>
 
+        <h5 className='text-center underline text-[18px] py-4'>
+  
+</h5>
+
+<div className='py-6'>
+  <p>
+    <span className='font-bold'><FormattedMessage id='app.Resume.OtherExperience.jobTitle_3' /></span>
+    <span className='px-2'>|</span>Family-Owned Store
+  </p>
+  <p className='py-1 italic'><FormattedMessage id='app.Resume.OtherExperience.city&date_3'/></p>
+  <ul className='list-disc list-outside px-7 py-1 leading-relaxed cursor-default'>
+    <li className='cursor-text'>
+      <FormattedMessage id='app.Resume.OtherExperience.job_3.li_1' />
+    </li>
+    <li className='cursor-text'>
+      <FormattedMessage id='app.Resume.OtherExperience.job_3.li_2' />
+    </li>
+    <li className='cursor-text'>
+      <FormattedMessage id='app.Resume.OtherExperience.job_3.li_3' />
+    </li>
+    <li className='cursor-text'>
+      <FormattedMessage id='app.Resume.OtherExperience.job_3.li_4' />
+    </li>
+  </ul>
+</div>
 
         
       </div>
